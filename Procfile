@@ -1,1 +1,1 @@
-web: ./build/install/ktor-login-sample/bin/com.login
+web: ./build/install/com.login/bin/com.login
