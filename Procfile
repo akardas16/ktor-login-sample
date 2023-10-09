@@ -1,1 +1,1 @@
-web: ./build/install/com.login/bin/com.login
+web: ./build/install/com.login.sample/bin/com.login.sample
