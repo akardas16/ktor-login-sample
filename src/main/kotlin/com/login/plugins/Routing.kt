@@ -2,6 +2,7 @@ package com.login.plugins
 
 import com.login.model.LoginRequestData
 import com.login.model.LoginResponseData
+import com.login.model.ResponseModel
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.Application
 import io.ktor.server.application.call
@@ -24,6 +25,10 @@ fun Application.configureRouting() {
             // TODO Verify email/password
             val randomId = Random.nextInt().toString()
             call.respond(HttpStatusCode.OK, LoginResponseData(randomId, data.email))
+        }
+
+        get("/hello") {
+            call.respond(HttpStatusCode.OK, ResponseModel(message = "Heey how are you?"))
         }
     }
 }
